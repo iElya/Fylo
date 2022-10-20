@@ -3,43 +3,32 @@ body{
     padding: 0px;
 }
 .main{
+    position: relative;
     width: 100%;
-    height: 100%;
+    height: 2300px;
+    background: white;
+    overflow: hidden;
+
+}
+.nav{
+    position: absolute;
+    top: 65px;
+    width: 1200px;
+    height: 50px;
     background: white;
     float: left;
-    position: relative;
-}
-
-.header{
     position: absolute;
-    width: 1280px;
-    height: 49px;
-    left: 60px;
-    top: 50px;
-    float: left;
+    left: 80px;
 }
-
-.logo{
-    position: absolute;
-    font-size: 50px;
-    margin: 0px 95px;
-    bottom: -9px;
-    font-weight: 600;
-}
-.logo a img{
-    position: absolute;
-    top: 7px;
-    left: -70px;
-}
-
 .menu{
     display: flex;
+    align-items: center;
     justify-content: end;
-    position: absolute;
-    left: 1000px;
-    bottom: 2px;
 }
-.menu ul{
+.menu{
+    position: absolute;
+    bottom: -11px;
+    left: 900px;
     margin: 0px;
     padding: 0px;
 }
@@ -61,29 +50,34 @@ body{
     cursor: pointer;
     color: #2F65F8;
     transition: 0.7s;
-
 }
-.main::before{
-    content: "All your files in one secure location, accessible anywhere";
+.section1{
+    width: 1200px;
+    height: 474px;
     position: absolute;
-    width: 627px;
-    height: 120px;
+    top: 239px;
     left: 80px;
-    top: 266px;
+    z-index: 2;
+    background: white;
+}
+.word{
+    position: absolute;
+    top: 70px;
+    width: 600px;
+    height: 120px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height: 60px;
+    /* or 150% */
     color: #07043B;
 }
-.main::after{
-    content: "Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family and co-workers.";
+.section1 p{
     position: absolute;
-    width: 585px;
+    top: 217px;
+    width: 540px;
     height: 72px;
-    left: 80px;
-    top: 401px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -93,29 +87,32 @@ body{
     letter-spacing: 0.53125px;
     color: #07043B;
 }
-.main img{
+.section1 img{
     position: absolute;
-    left: 700px;
-    top: 150px;
+    width: 640px;
+    height: 474px;
+    left: 570px;
+    bottom: 0px;
 }
-.main .btn{
+.section1 .btn{
     position: absolute;
     width: 200px;
     height: 45px;
-    top: 520px;
-    left: 430px;
+    top: 325px;
+    left: 339px;
     color: white;
     background: #2F65F8;
     border: #2F65F8;
     border-radius: 3.125px;
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
 }
-.main input{
+input{
     position: absolute;
     width: 320px;
     height: 45px;
-    top: 518px;
-    left: 80px;
+    top: 324px;
+    left: 0px;
+    padding: 0 0 0 10px;
     border: 0.625px solid #07043B;
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
     border-radius: 3.125px;
@@ -198,7 +195,7 @@ body{
 }
 .green i{
     position: absolute;
-    left: 138px;
+    left: 134px;
     top: 4px;
 }
 .green:hover{
@@ -267,4 +264,172 @@ body{
     /* identical to box height, or 188% */
     letter-spacing: 0.4px;
     color: #07043B;
+}
+.cta{
+    position: absolute;
+    width: 100%;
+    height: 369.71px;
+    background: #575988;
+    top: 1622px;
+}
+.cta h1{
+    position: absolute;
+    left: 80px;
+    top: 76px;
+    width: 346px;
+    height: 48px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    /* identical to box height, or 150% */
+    color: #FFFFFF;
+}
+.cta p{
+    width: 453px;
+    height: 72px;
+    position: absolute;
+    left: 80px;
+    top: 145px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+}
+.cta .btn2{
+    position: absolute;
+    width: 200px;
+    height: 48px;
+    top: 176px;
+    left: 840px;
+    color: white;
+    background: #2F65F8;
+    box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.157043);
+    border-radius: 3.125px;
+    border: #2F65F8;
+}
+.cta input{
+    position: absolute;
+    width: 480px;
+    height: 48px;
+    top: 112px;
+    left: 840px;
+    padding: 0 0 0 10px;
+    background: #FFFFFF;
+    box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.157043);
+    border-radius: 3.125px;
+    
+}
+.btn2:hover{
+    cursor: pointer;
+    transition: 0.7s;
+}
+.footer{
+    position: absolute;
+    top: 1944px;
+    width: 100%;
+    height: 391px;
+    background: #07043B;
+}
+.footer img{
+    position: absolute;
+    left: 80px;
+    top: 92px;
+}
+.phone{
+    position: absolute;
+    left: 120px;
+    top: 168px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    color: #FFFFFF;
+}
+.mail{
+    position: absolute;
+    left: 120px;
+    top: 208px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    color: #FFFFFF;
+}
+.stolb1 .pr{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 83px;
+    top: 188px;   
+}
+.stolb1 .gm{
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 83px;
+    top: 227px; 
+}
+.stolb2{
+    position: absolute;
+    left: 524px;
+    top: 162px;
+    width: 120px;
+    height: 136px;
+}
+.stolb2 ul li{
+    color: #FFFFFF;
+    list-style-type: none;
+    padding: 5px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+.stolb3{
+    position: absolute;
+    left: 793px;
+    top: 162px;
+    width: 150px;
+    height: 98px;
+}
+.stolb3 ul li{
+    color: #FFFFFF;
+    list-style-type: none;
+    padding: 5px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+.social img{
+    width: 120px;
+    height: 31px;
+    position: absolute;
+    top: 185px;
+    left: 1059px;
+    color: #DFE4F0;
+}
+
+.stolb3 ul li:hover , .stolb2 ul li:hover , .mail:hover , .phone:hover{
+    cursor: pointer;
+    color: #07043B;
+    transition: 0.7s;
+    
+    
 }
